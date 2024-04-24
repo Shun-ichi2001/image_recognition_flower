@@ -12,21 +12,102 @@
   
 ## プロジェクト名
 
-React、DRF、Terraform のテンプレートリポジトリ
+花の名前を教えてくれるwebアプリ
 
 <!-- プロジェクトについて -->
 
 ## プロジェクトについて
 
-React、DRF、Terraform を勉強する際に使用できるテンプレート
+## ディレクトリ構成
 
-<!-- プロジェクトの概要を記載 -->
+<!-- Treeコマンドを使ってディレクトリ構成を記載 -->
 
-  <p align="left">
-    <br />
-    <!-- プロジェクト詳細にBacklogのWikiのリンク -->
-    <a href="Backlogのwikiリンク"><strong>プロジェクト詳細 »</strong></a>
-    <br />
-    <br />
+❯ tree -a -I "node_modules|.next|.git|.pytest_cache|static" -L 2
 
-<p align="right">(<a href="#top">トップへ</a>)</p>
+│  db.sqlite3
+│  manage.py
+│
+├─flower
+│  │  admin.py
+│  │  apps.py
+│  │  forms.py
+│  │  models.py
+│  │  tests.py
+│  │  urls.py
+│  │  views.py
+│  │  __init__.py
+│  │
+│  ├─migrations
+│  │  │  0001_initial.py
+│  │  │  __init__.py
+│  │  │
+│  │  └─__pycache__
+│  │          0001_initial.cpython-310.pyc
+│  │          __init__.cpython-310.pyc
+│  │
+│  ├─recognition
+│  │  │  model.py
+│  │  │  recognize.py
+│  │  │  train.py
+│  │  │
+│  │  ├─data
+│  │  │  │  data.py
+│  │  │  │  label.txt
+│  │  │  │  setup.py
+│  │  │  │
+│  │  │  └─__pycache__
+│  │  │          data.cpython-310.pyc
+│  │  │
+│  │  ├─save_model
+│  │  │      model_10.pth
+│  │  │      model_15.pth
+│  │  │      model_20.pth
+│  │  │      model_5.pth
+│  │  │
+│  │  └─__pycache__
+│  │          model.cpython-310.pyc
+│  │          recognize.cpython-310.pyc
+│  │
+│  ├─templates
+│  │  └─flower
+│  │          result.html
+│  │          showall.html
+│  │          upload.html
+│  │
+│  └─__pycache__
+│          admin.cpython-310.pyc
+│          apps.cpython-310.pyc
+│          forms.cpython-310.pyc
+│          models.cpython-310.pyc
+│          urls.cpython-310.pyc
+│          views.cpython-310.pyc
+│          __init__.cpython-310.pyc
+│
+├─media
+│  └─images
+│          large.jpg
+│          large_Ixk2Xit.jpg
+│
+└─mysite
+    │  asgi.py
+    │  settings.py
+    │  urls.py
+    │  wsgi.py
+    │  __init__.py
+    │
+    └─__pycache__
+            settings.cpython-310.pyc
+            urls.cpython-310.pyc
+            wsgi.cpython-310.pyc
+            __init__.cpython-310.pyc
+
+### アプリの起動と動作確認
+
+以下のコマンドでwebアプリを起動
+
+python manage.py runserver
+
+### 動作確認
+
+[http://127.0.0.1:8000 ](http://127.0.0.1:8000/flower/upload)にアクセスできるか確認
+アクセスできたら成功
