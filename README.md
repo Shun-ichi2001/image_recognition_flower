@@ -23,11 +23,11 @@
 <!-- Treeコマンドを使ってディレクトリ構成を記載 -->
 
 ❯ tree -a -I "node_modules|.next|.git|.pytest_cache|static" -L 2
-
+.
 │  db.sqlite3
 │  manage.py
 │
-├─flower
+├─.flower
 │  │  admin.py
 │  │  apps.py
 │  │  forms.py
@@ -37,7 +37,7 @@
 │  │  views.py
 │  │  __init__.py
 │  │
-│  ├─migrations
+│  ├─.migrations
 │  │  │  0001_initial.py
 │  │  │  __init__.py
 │  │  │
@@ -45,12 +45,12 @@
 │  │          0001_initial.cpython-310.pyc
 │  │          __init__.cpython-310.pyc
 │  │
-│  ├─recognition
+│  ├─.recognition
 │  │  │  model.py
 │  │  │  recognize.py
 │  │  │  train.py
 │  │  │
-│  │  ├─data
+│  │  ├─.data
 │  │  │  │  data.py
 │  │  │  │  label.txt
 │  │  │  │  setup.py
@@ -58,23 +58,23 @@
 │  │  │  └─__pycache__
 │  │  │          data.cpython-310.pyc
 │  │  │
-│  │  ├─save_model
+│  │  ├─.save_model
 │  │  │      model_10.pth
 │  │  │      model_15.pth
 │  │  │      model_20.pth
 │  │  │      model_5.pth
 │  │  │
-│  │  └─__pycache__
+│  │  └─.__pycache__
 │  │          model.cpython-310.pyc
 │  │          recognize.cpython-310.pyc
 │  │
-│  ├─templates
-│  │  └─flower
+│  ├─.templates
+│  │  └─.flower
 │  │          result.html
 │  │          showall.html
 │  │          upload.html
 │  │
-│  └─__pycache__
+│  └─.__pycache__
 │          admin.cpython-310.pyc
 │          apps.cpython-310.pyc
 │          forms.cpython-310.pyc
@@ -83,19 +83,19 @@
 │          views.cpython-310.pyc
 │          __init__.cpython-310.pyc
 │
-├─media
-│  └─images
+├─.media
+│  └─.images
 │          large.jpg
 │          large_Ixk2Xit.jpg
 │
-└─mysite
+└─.mysite
     │  asgi.py
     │  settings.py
     │  urls.py
     │  wsgi.py
     │  __init__.py
     │
-    └─__pycache__
+    └─.__pycache__
             settings.cpython-310.pyc
             urls.cpython-310.pyc
             wsgi.cpython-310.pyc
