@@ -18,6 +18,13 @@
 
 ## プロジェクトについて
 
+## ツール
+
+Python3
+Pytorch
+torchvision
+Django
+
 
 ### アプリの起動と動作確認
 
