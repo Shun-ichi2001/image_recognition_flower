@@ -25,6 +25,11 @@ Pytorch
 torchvision
 Django
 
+## 必要ライブラリのインストール
+ターミナル上で以下のコマンドを実行てください。
+
+pip install django torch torchvision opencv-python
+
 
 ### アプリの起動と動作確認
 
