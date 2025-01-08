@@ -41,3 +41,12 @@ python manage.py runserver
 
 [http://127.0.0.1:8000 ](http://127.0.0.1:8000/flower/upload)にアクセスできるか確認
 アクセスできたら成功
+
+アクセスできると以下のような画面が表示されると思います
+
+![Webアプリ1](https://github.com/user-attachments/assets/f3d967e4-fe11-4aac-af2f-c3931da3e62d)
+
+### 結果
+以下のように入力した花画像がどの種類のものなのか識別してくれます
+
+![webapuri2](https://github.com/user-attachments/assets/5af7f533-1937-446e-8028-9c49cc954257)
